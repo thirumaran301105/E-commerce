@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Site</title>
+    <style>
+        /* Global Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://image.slidesdocs.com/responsive-images/background/yellow-gradient-blue-halo-nature-texture-powerpoint-background_e229a75b51__960_540.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: rgb(255, 123, 0);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 50px;
+            color: white;
+            margin: 0;
+        }
+
+        /* Product Container */
+        table {
+            width: 100%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        td {
+            padding: 15px;
+        }
+
+        /* Product Card */
+        .product-card {
+            width: 300px;
+            height: 400px;
+            border: 10px black solid;
+            border-radius: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all ease 0.6s;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .product-card:hover {
+            background-color: rgb(0, 217, 255);
+            transform: scale(1.15);
+        }
+
+        .product-card img {
+            width: 200px;
+            border: 4px rgb(0, 217, 255) solid;
+            border-radius: 30px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .product-card img:hover {
+            background-color: blue;
+        }
+
+        .product-name {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .product-price {
+            font-size: 20px;
+            font-weight: italic;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: rgb(255, 123, 0);
+            padding: 20px 0;
+            color: white;
+            text-align: center;
+        }
+
+        #insta {
+            font-size: 18px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            table {
+                display: block;
+            }
+
+            td {
+                display: block;
+                margin: 0 auto;
+                padding: 10px;
+            }
+
+            .product-card {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>E-Commerce Site🤞</h1>
+    </header>
+
+    <table>
+        <tr>
+            <td>
+                <div class="product-card">
+                    <h2 class="product-name">Hoodie</h2>
+                    <img src="https://www.redwolf.in/image/cache/catalog/hoodies/marvel-upgraded-spider-suit-hoodie-india-600x800.jpg?m=1705304806" alt="Marvel Hoodie"> 
+                    <h2 class="product-price">Price: ₹500/-</h2>
+                </div>
+            </td>
+            <td>
+                <div class="product-card">
+                    <h2 class="product-name">Pant</h2>
+                    <img src="https://blucheez.fashion/cdn/shop/files/DSCF3909_1copy2.webp?v=1730542274&width=600" alt="Stylish Pant"> 
+                    <h2 class="product-price">Price: ₹700/-</h2>
+                </div>
+            </td>
+            <td>
+                <div class="product-card">
+                    <h2 class="product-name">Shirt</h2>
+                    <img src="https://rukminim2.flixcart.com/image/850/1000/ks7tuvk0/shirt/8/u/2/s-fu700-520-navy-blue-fifth-u-original-imag5tybasyk6hxg.jpeg?q=20&crop=false" alt="Formal Shirt"> 
+                    <h2 class="product-price">Price: ₹600/-</h2>
+                </div>
+            </td>
+            <td>
+                <div class="product-card">
+                    <h2 class="product-name">Shoe</h2>
+                    <img src="https://www.campusshoes.com/cdn/shop/products/FIRST_11G-787_BLK-MATTLIC.BLU.jpg?v=1735976693" alt="Stylish Shoe"> 
+                    <h2 class="product-price">Price: ₹900/-</h2>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <footer>
+        <h3 id="insta">Instagram: thiru_maara</h3>
+        <h1>Developed by Maaran</h1>
+    </footer>
+</body>
+</html>
